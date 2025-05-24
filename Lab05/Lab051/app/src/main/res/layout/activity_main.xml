@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity"> <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Chuyển đổi năm dương lịch"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:background="#008000" android:textColor="@android:color/white"
+    android:padding="8dp"
+    android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Năm dương lịch:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/editnamduonglich"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" /> </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chuyển đổi"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Năm âm lịch:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewNamAmLich"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textColor="#FFD700" android:background="#FFFF00" android:padding="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>
